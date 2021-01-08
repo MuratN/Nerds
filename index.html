@@ -123,15 +123,6 @@
     </main>
 
     <footer>
-        <div class="footer-social">           
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul> 
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
         <div id="map">
             <p>
                 <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -143,29 +134,40 @@
                 <br>тел +7(812)275-75-75
                 <br><a class="button" href="#">НАПИШИТЕ НАМ</a>
             </div>
-            <section class="modal modal-writetous">
-                <h2>Напишите нам</h2>
-                <form class="writetous-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                        <label for="user-name">Ваше имя:</label>
-                        <input class="writetous-user" id="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-                    </p>
-                    <p>
-                        <label for="user-emial">Ваш e-mail:</label>
-                        <input class="writetous-email" id="user-emial" type="text" name="emial" placeholder="Для отправки ответа">
-                    </p>
-                    <p>
-                        <label for="user-text">Текст письма:</label>
-                        <input class="writetous-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
-                    </p>
-                </form>
-                <button class="modal-close" type="button">Закрыть</button>
-            </section>
+        </div>
+        <div class="footer-social">           
+            <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul> 
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>          
             <a class="main-header-logo">
                 <img src="img/map-marker.png" width="231" height="190" alt="Логотип дизайн-студии «Нёрдс»">
             </a>
         </div>
     </footer>
+
+    <section class="modal modal-writetous">
+        <h2>Напишите нам</h2>
+        <form class="writetous-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-name">Ваше имя:</label>
+               <input class="writetous-user" id="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+                <label for="user-emial">Ваш e-mail:</label>
+                <input class="writetous-email" id="user-emial" type="text" name="emial" placeholder="Для отправки ответа">
+            </p>
+            <p>
+                <label for="user-text">Текст письма:</label>
+               <input class="writetous-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
+            </p>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
