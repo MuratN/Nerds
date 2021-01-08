@@ -27,7 +27,65 @@
         <h1 class="page-title">Магазин готовых шаблонов</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+                <!-- Здесь будет фильтр стоимость -->
+                <fieldset>
+                    <legend>Сетка</legend>
+                    <p>
+                        <input type="radio" name="grid" id="filter-adaptive" checked>
+                        <label for="filter-adaptive">Адаптивная</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="grid" id="filter-fixed" >
+                        <label for="filter-fixed">Фиксированная</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="grid" id="filter-rubber">
+                        <label for="filter-rubber">Резиновая</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности</legend>
+                    <p>
+                        <input type="checkbox" name="slider" id="filter-slider" checked>
+                        <label for="filter-slider">Слайдер</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="advantages" id="filter-advantages" >
+                        <label for="filter-advantages">Блок преимуществ</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="news" id="filter-news" checked>
+                        <label for="filter-news">Новости</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="gallery" id="filter-gallery" >
+                        <label for="filter-gallery">Галерея</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="basket" id="filter-basket" >
+                        <label for="filter-basket">Корзина</label>
+                    </p>
+                </fieldset>
+            </form>
+            <h2 class="visually-hidden">Сортировка</h2>
+            <form class="sorting" method="GET" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сортировать</legend>
+                    <p>
+                        <input type="radio" name="sort" id="sorting-price" checked>
+                        <label for="sorting-price">по цене</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sort" id="sorting-type" >
+                        <label for="sorting-type">по типу</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sort" id="sorting-name">
+                        <label for="sorting-name">по названию</label>
+                    </p>
+                </fieldset>
+            </form>
         </section>  
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
