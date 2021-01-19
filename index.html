@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >    
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -48,20 +52,20 @@
         <section class="services">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-list">
-                <li class="services-item">
+                <li class="services-item-web">
                     <h3>ВЕБ-САЙТЫ</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                    <a class="button" href="#">Заказать</a>            
+                    <a class="button button-web" href="#">Заказать</a>            
                 </li>
-                <li class="services-item">
+                <li class="services-item-app">
                     <h3>ПРИЛОЖЕНИЯ</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a class="button" href="#">Заказать</a>            
+                    <a class="button button-app" href="#">Заказать</a>            
                 </li>
-                <li class="services-item">
+                <li class="services-item-presentation">
                     <h3>ПРЕЗЕНТАЦИИ</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны</p>
-                    <a class="button" href="#">Заказать</a>            
+                    <a class="button button-presentation" href="#">Заказать</a>            
                 </li>              
             </ul>
         </section>
@@ -69,7 +73,7 @@
             <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
             <h3>ВПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
-            <ul>
+            <ul class="aboutus-list">
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для IOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -77,44 +81,41 @@
             <a class="main-header-logo">
                 <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
             </a>
-            <h3>С 2004 года любим точность во всем:</h3>
-            <ul>
-                <li>
-                    <p>146%<br>
-                        Уровень самоотдачи
-                    </p>
+            <h3>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h3>
+            <ul class="aboutus-list">
+                <li class="aboutus-percent">
+                    <span>146%</span>
+                    <p>Уровень самоотдачи</p>                    
                 </li>
-                <li>
-                    <p>100%<br>
-                        Соблюдение сроков
-                    </p>
+                <li class="aboutus-percent">
+                    <span>100%</span>
+                    <p>Соблюдение сроков</p>                    
                 </li>
-                <li>
-                    <p>50%<br>
-                        Минимальная предоплата
-                    </p>
+                <li class="aboutus-percent">
+                    <span>50%</span>
+                    <p>Минимальная предоплата</p>                    
                 </li>                
             </ul>
         </section>
         <section class="jobs">
             <ul class="jobs-list">
                 <li>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <a class="jobs-item" href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML academy">                    
                     </a>
                 </li>     
                 <li>
-                    <a href="https://http://barbershop-borodinski.ru/">
+                    <a class="jobs-item" href="https://http://barbershop-borodinski.ru/">
                         <img src="img/logo-borodinski.png" width="209" height="90" alt="Барбершоп Бородинский">                    
                     </a>
                 </li>   
                 <li>
-                    <a href="https://pink.ru/">
+                    <a class="jobs-item" href="https://pink.ru/">
                         <img src="img/logo-pink.png" width="185" height="52" alt="Pink">                    
                     </a>
                 </li>   
                 <li>
-                    <a href="https://mishka.ru/">
+                    <a class="jobs-item" href="https://mishka.ru/">
                         <img src="img/logo-mishka.png" width="173" height="84" alt="Мишка">                    
                     </a>
                 </li>              
@@ -126,6 +127,9 @@
         <div id="map">
             <p>
                 <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                <div>
+                    <img src="img/map-marker.png" width="231" height="190" alt="Логотип дизайн-студии «Нёрдс»">
+                </div>
             </p>
             <div class="contacts">
                 <b>NЁRDS DESIGN STUDIO</b>
@@ -135,39 +139,42 @@
                 <br><a class="button" href="#">НАПИШИТЕ НАМ</a>
             </div>
         </div>
+
         <div class="footer-social">           
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+            <ul class="social-list">
+                <li><a class="social-button vk-icon" href="vk.com">Вконтакте</a>
+                    <!-- <img class="vk" src="img/vk-icon.svg" width="26" height="26" alt="ВК"> -->
+                </li>
+                <li><a class="social-button fb-icon" href="facebook.com">Фейсбук</a>
+                    <!-- <img class="fb" src="img/fb-icon.svg" width="26" height="26" alt="ФБ"> -->
+                </li>
+                <li><a class="social-button insta-icon" href="instagram.com">Инстаграм</a>
+                    <!-- <img class="insta" src="img/insta-icon.svg" width="26" height="26" alt="Инста"> -->
+                </li>
             </ul> 
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>          
-            <a class="main-header-logo">
-                <img src="img/map-marker.png" width="231" height="190" alt="Логотип дизайн-студии «Нёрдс»">
-            </a>
         </div>
     </footer>
 
     <section class="modal modal-writetous">
         <h2>Напишите нам</h2>
         <form class="writetous-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
+            <p class="writetous-item">
                 <label for="user-name">Ваше имя:</label>
                <input class="writetous-user" id="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
             </p>
-            <p>
+            <p class="writetous-item"> 
                 <label for="user-emial">Ваш e-mail:</label>
                 <input class="writetous-email" id="user-emial" type="text" name="emial" placeholder="Для отправки ответа">
             </p>
-            <p>
+            <p class="writetous-item writetous-text">
                 <label for="user-text">Текст письма:</label>
                <input class="writetous-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
             </p>
         </form>
+        <button class="button">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-
   </body>
 </html>

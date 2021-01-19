@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    /* text-transform: ; */
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.navigation, 
+.features-list, 
+.services-list, 
+.aboutus-list, 
+.jobs-list, 
+.social-list {
+    list-style: none;
+}
+
+.navigation a {
+    color: #000;
+}
+
+.navigation a:hover,
+.navigation a:focus
+{
+    color: #fb565a;
+}
+
+.basket {
+    width: 15px;
+    height: 15px;
+    background-image: url(img/cart-icon.png);
+    background-repeat: no-repeat;
+    background-color: #eeeeee;
+}
+
+.features {
+    background-color: #eeeeee;
+    background-image: url(img/nerds-index-slide1.png);
+    background-position: 751px;
+    background-repeat: no-repeat;
+}
+
+.features b {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.button {    
+    font: inherit;
+
+    display: inline-block;
+
+    min-width: 160px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    vertical-align: 100px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    
+    background-color: #fb565a;
+    border-radius: 2px;
+}
+
+.button:hover
+{
+    background-color: #e74246;
+}
+
+.button:focus{
+    color: #e26f72;
+    background-color: #d7373b;
+}
+
+.services {
+    background-color: #ffffff;
+    background-image: url(img/illustration.png);
+    background-position: 26px;
+    background-repeat: no-repeat;
+
+}
+
+.button-web {
+    /* font: inherit; */
+
+    text-align: center;
+    color: #ffffff;
+     
+    background-color: #fb565a;
+    border-radius: 2px;
+}
+
+.button-web:hover
+{
+    background-color: #e74246;
+}
+
+.button-web:focus
+{
+    color: #e26f72;
+    background-color: #d7373b;
+}
+
+.button-app {
+    /* font: inherit; */
+
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #00ca74;
+    border-radius: 2px;
+}
+
+.button-app:hover
+{
+    background-color: #00bc6c;
+}
+
+.button-app:focus
+{
+    color: #38bd84;
+    background-color: #00bc6c;
+}
+
+.button-presentation {
+    /* font: inherit; */
+
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #efc84a;
+    border-radius: 2px;
+}
+
+.button-presentation:hover
+{
+    background-color: #eab534;
+}
+
+.button-presentation:focus
+{
+    color: #ecbe5c;
+    background-color: #e5a722;
+}
+
+.services h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.aboutus b {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.aboutus h3 {
+    font-weight: 600;
+}
+
+.aboutus-percent span{
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.jobs-item {
+    opacity: 0.5;
+}
+
+.jobs-item:hover {
+    opacity: 1;
+}
+
+.jobs-item:focus {
+    opacity: 0.3;
+}
+
+.contacts b{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contacts {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #666666;
+}
+
+.social-button {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    display: inline-block;
+    font-size: 0;
+}
+
+.vk-icon {
+    background-image: url(img/vk-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb-icon {
+    background-image: url(img/fb-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.insta-icon {
+    background-image: url(img/insta-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button:hover{
+    background-color: #e74246;
+}
+
+.social-button:focus{
+    background-color: #d7373b;
+    counter-reset: #e37376;
+}
+
+.footer-social b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.footer-social p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.modal-writetous h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.writetous-form {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.writetous-item input{
+    width: 360px;
+    height: 50px;
+    border-color: #d7dcde;
+}
+
+.writetous-text input{
+    width: 760px;
+    height: 118px;
+}
+
+.writetous-item input:hover{
+    border-color: #b4b9bb;
+}
+
+.writetous-item input:focus{
+    border-color: #ffffff;
+}
