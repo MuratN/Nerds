@@ -7,7 +7,6 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-    /* text-transform: ; */
 
     background-color: #ffffff;
 }
@@ -55,7 +54,7 @@ a {
 .features {
     background-color: #eeeeee;
     background-image: url(img/nerds-index-slide1.png);
-    background-position: 751px;
+    background-position: 571px 132px;
     background-repeat: no-repeat;
 }
 
@@ -68,8 +67,6 @@ a {
 }
 
 .button {    
-    font: inherit;
-
     display: inline-block;
 
     min-width: 160px;
@@ -77,6 +74,7 @@ a {
     line-height: 50px;
     padding-left: 10px;
     padding-right: 10px;
+    
 
     vertical-align: 100px;
     text-align: center;
@@ -87,83 +85,63 @@ a {
     border-radius: 2px;
 }
 
-.button:hover
-{
+.button:hover {
     background-color: #e74246;
 }
 
-.button:focus{
+.button:focus {
     color: #e26f72;
     background-color: #d7373b;
 }
 
 .services {
     background-color: #ffffff;
-    background-image: url(img/illustration.png);
-    background-position: 26px;
-    background-repeat: no-repeat;
-
 }
 
 .button-web {
-    /* font: inherit; */
-
     text-align: center;
     color: #ffffff;
-     
     background-color: #fb565a;
     border-radius: 2px;
 }
 
-.button-web:hover
-{
+.button-web:hover {
     background-color: #e74246;
 }
 
-.button-web:focus
-{
+.button-web:focus {
     color: #e26f72;
     background-color: #d7373b;
 }
 
 .button-app {
-    /* font: inherit; */
-
     text-align: center;
     color: #ffffff;
-    
     background-color: #00ca74;
     border-radius: 2px;
 }
 
-.button-app:hover
-{
+.button-app:hover {
     background-color: #00bc6c;
 }
 
-.button-app:focus
-{
+.button-app:focus {
     color: #38bd84;
     background-color: #00bc6c;
 }
 
 .button-presentation {
-    /* font: inherit; */
-
     text-align: center;
     color: #ffffff;
-    
     background-color: #efc84a;
     border-radius: 2px;
 }
 
-.button-presentation:hover
-{
+.button-presentation:hover {
     background-color: #eab534;
 }
 
-.button-presentation:focus
-{
+.button-presentation:focus {
     color: #ecbe5c;
     background-color: #e5a722;
 }
@@ -188,7 +166,7 @@ a {
     font-weight: 600;
 }
 
-.aboutus-percent span{
+.aboutus-percent span {
     font-size: 45px;
     line-height: 10px;
     font-weight: 600;
@@ -208,7 +186,7 @@ a {
     opacity: 0.3;
 }
 
-.contacts b{
+.contacts b {
     font-size: 18px;
     line-height: 30px;
     font-weight: 600;
@@ -251,11 +229,11 @@ a {
     background-position: center;
 }
 
-.social-button:hover{
+.social-button:hover {
     background-color: #e74246;
 }
 
-.social-button:focus{
+.social-button:focus {
     background-color: #d7373b;
     counter-reset: #e37376;
 }
@@ -284,21 +262,21 @@ a {
     font-weight: 500;
 }
 
-.writetous-item input{
+.writetous-item input {
     width: 360px;
     height: 50px;
     border-color: #d7dcde;
 }
 
-.writetous-text input{
+.writetous-text input {
     width: 760px;
     height: 118px;
 }
 
-.writetous-item input:hover{
+.writetous-item input:hover {
     border-color: #b4b9bb;
 }
 
-.writetous-item input:focus{
+.writetous-item input:focus {
     border-color: #ffffff;
 }
