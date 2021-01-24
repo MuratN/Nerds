@@ -11,7 +11,7 @@
   <body>
 
      <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <div class="logo-wrapper">
                 <a class="main-header-logo">
                     <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
@@ -29,10 +29,11 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="main-container">
         <!-- <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1> -->
         <section class="features">
             <!-- <h2 class="visually-hidden">Преимущества</h2> -->
+            <div class="features-container container">
             <ul class="features-list">
                 <li class="feature-item">
                     <b>Долго, дорого, скрупулезно</b>
@@ -50,8 +51,9 @@
                     <a class="button" href="#">Узнать больше</a>
                 </li> -->
             </ul>
+            </div>
         </section>
-        <section class="services">
+        <section class="services container">
             <!-- <h2 class="visually-hidden">Услуги</h2> -->
             <ul class="services-list">
                 <li class="services-item-web">
@@ -76,7 +78,7 @@
                 </li>              
             </ul>
         </section>
-        <section class="aboutus">
+        <section class="aboutus container">
             <div class="aboutus-text">
                 <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
@@ -109,7 +111,7 @@
             </div>
         </section>
         <section class="jobs">
-            <ul class="jobs-list">
+            <ul class="jobs-list container">
                 <li>
                     <a class="jobs-item" href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML academy">                    
@@ -135,22 +137,24 @@
     </main>
 
     <footer>
-        <div class="map">
-                <!-- <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
-            <div class="contacts">
-                <b>NЁRDS DESIGN STUDIO</b>
-                <div>
-                    <br>191186, Санкт-Петербург,
-                    <br>ул. Б. Конюшенная, д. 19/8
+        <div class="container">
+            <div class="map">
+                    <!-- <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
+                <div class="contacts">
+                    <b>NЁRDS DESIGN STUDIO</b>
+                    <div>
+                        <br>191186, Санкт-Петербург,
+                        <br>ул. Б. Конюшенная, д. 19/8
+                    </div>
+                    <br>тел +7(812)275-75-75
+                    <br><a class="button" href="#">НАПИШИТЕ НАМ</a>
                 </div>
-                <br>тел +7(812)275-75-75
-                <br><a class="button" href="#">НАПИШИТЕ НАМ</a>
-            </div>
-            <div class="map-marker">
-                <img src="img/map-marker.png" width="231" height="190" alt="Логотип дизайн-студии «Нёрдс»">
+                <div class="map-marker">
+                    <img src="img/map-marker.png" width="231" height="190" alt="Логотип дизайн-студии «Нёрдс»">
+                </div>
             </div>
         </div>
-        <div class="footer-social">           
+        <div class="footer-social container">           
             <ul class="social-list">
                 <li><a class="social-button vk-icon" href="vk.com">Вконтакте</a>
                     <!-- <img class="vk" src="img/vk-icon.svg" width="26" height="26" alt="ВК"> -->

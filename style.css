@@ -16,39 +16,43 @@ a {
 }
 
 .main-header {
-    display: flex;
-    width: 1440px;
-    /* margin-left: 120px;
-    margin-right: 120px; */
-    justify-content: space-between;
     background-color: #eeeeee;
+    padding-bottom: 30px;
 }
 
 .main-navigation {
-    display: flex;
-    margin-top: 49px;
-    /* justify-content: space-between; */
+    padding-top: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.container {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li:not(:first-child) {
+    margin-left: 30px;
+  }
+
+.main-navigation {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     background-color: #eeeeee;
     color: #000000;
     text-transform: uppercase;
-}
-
-.logo-wrapper {
-    display: flex;
-    padding-left: 20px;
-    width: 300px;
-    margin-left: 120px;
-}
-
-.navigation {
-    display: flex;
-    width: 540px;
-    justify-content: space-around;
-    margin-top: 35px;
 }
 
 .navigation, 
@@ -70,12 +74,7 @@ a {
     color: #fb565a;
 }
 
-.basket {
-    display: flex;
-    margin-top: 35px;
-    padding-right: 20px;
-    margin-left: 200px;
-
+.basket { 
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -88,15 +87,23 @@ a {
 }
 
 .features {
-    display: flex;
-    width: 1440px;
-    margin-bottom: 80px;
-
     background-color: #eeeeee;
-    background-image: url(img/nerds-index-slide1.png);
-    background-position: 571px;
     background-repeat: no-repeat;
     line-height: 35px;
+}
+
+.features-container {
+    margin-bottom: 80px;
+    min-height: 420px;
+    background-image: url(img/nerds-index-slide1.png);
+    background-position: 391px;
+    background-repeat: no-repeat;
+}
+
+.features-list {
+    display: flex;
+    width: 380px;
+    align-items: center;
 }
 
 .features b {
@@ -107,36 +114,22 @@ a {
     color: #000000;
 }
 
-.features-list {
-    display: flex;
-    width: 380px;
-    min-height: 400px;
-    align-items: center;
-    margin-left: 120px;
-    margin-right: 120px;
-
-}
-
 .services {
-    display: flex;
-    width: 1440px;
     margin-bottom: 120px;
 }
 
 .services-list {
     display: flex;
     width: 260px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
-.services-item-web, .services-item-app, .services-item-presentation {
+.services-item-app, .services-item-presentation {
     margin-left: 100px;
 }
 
 .aboutus {
-    display: flex;
     justify-content: space-between;
-    width: 1440px;
     margin-bottom: 130px;
     line-height: 24px;
 }
@@ -145,7 +138,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 660px;
-    margin-left: 140px;
 }
 
 .aboutus-digits {
@@ -164,10 +156,7 @@ a {
 }
 
 .jobs-list {
-    display: flex;
-    width: 1440px;
     justify-content: space-around;
-    margin: auto;
     margin-bottom: 120px;
 }
 
@@ -175,6 +164,7 @@ a {
     display: flex;
     width: 100%;
     background-image: url(img/map.jpg);
+    /* background-size: contain; */
     background-repeat: no-repeat;
     margin-bottom: 70px;
     min-height: 420px;
@@ -184,29 +174,24 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 140px;
+    margin-top: 55px;
+    margin-bottom: 55px;
     justify-content: space-around;
     width: 320px;
     height: 310px;
     background-color: #ffffff;
-    margin-left: 140px;
-    margin-top: 50px;
 }
 
 .map-marker {
     margin-top: 90px;
-    margin-left: 360px;
-}
-
-.footer-social {
-    display: flex;
-    width: 1440px;
+    margin-left: 361px;
 }
 
 .social-list {
     display: flex;
     width: 260px;
     justify-content: space-between;
-    margin-left: 140px;
 }
 
 .social-text {
