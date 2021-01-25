@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 .main-header {
     background-color: #eeeeee;
     padding-bottom: 30px;
@@ -27,19 +31,18 @@ a {
 }
 
 .container {
-    width: 1160px;
+    display: flex;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-}
-
-.navigation ul {
-    margin: 0;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navigation {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li:not(:first-child) {
@@ -84,6 +87,8 @@ a {
     width: 160px;
     background-image: url(img/cart-icon.png);
     background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
 }
 
 .features {
@@ -143,14 +148,13 @@ a {
 .aboutus-digits {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    margin-right: 140px;
+    width: 450px;
 }
 
 .aboutus-list-percent {
     display: flex;
-    margin-top: 50px;
-    width: 360px;
+    margin-top: 30px;
+    width: 400px;
     justify-content: space-between;
     list-style: none;
 }
@@ -162,9 +166,11 @@ a {
 
 .map {
     display: flex;
-    width: 100%;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
     background-image: url(img/map.jpg);
-    /* background-size: contain; */
     background-repeat: no-repeat;
     margin-bottom: 70px;
     min-height: 420px;
