@@ -19,9 +19,26 @@ ul {
     padding-inline-start: 0;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 .main-header {
     background-color: #eeeeee;
-    padding-bottom: 30px;
 }
 
 .main-navigation {
@@ -47,7 +64,7 @@ ul {
 
 .navigation li:not(:first-child) {
     margin-left: 30px;
-  }
+}
 
 .main-navigation {
     font-size: 16px;
@@ -92,33 +109,140 @@ ul {
 }
 
 .features {
+    position: relative;
     background-color: #eeeeee;
     background-repeat: no-repeat;
     line-height: 35px;
-}
-
-.features-container {
     margin-bottom: 80px;
-    min-height: 420px;
-    background-image: url(img/nerds-index-slide1.png);
-    background-position: 391px;
-    background-repeat: no-repeat;
 }
 
 .features-list {
     display: flex;
-    width: 380px;
+    min-height: 420px;
     align-items: center;
+    margin: 0;
+    padding-top: 0;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    min-height: 280px;
+    width: 520px;
+    justify-content: space-between;
+}
+
+.feature-button {
+    width: 240px;
+}
+
+.feature-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 2;
+    
+    width: 160px;
+    height: 18px;
+  
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+
+.feature-controls label {
+    position: relative;
+    
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feature-controls label::after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    width: 18px;
+    height: 18px;
+    
+    background: #ffffff;
+    
+    border-radius: 50%;
 }
 
 .features b {
     font-size: 55px;
     line-height: 55px;
-    font-weight: 500;
+    font-weight: 560;
     background-color: #eeeeee;
     color: #000000;
 }
 
+.features p{
+    width: 460px;
+}
+
+.feature-item {
+    display: none;
+    width: 1160px;
+    min-height: 420px;
+    align-items: center;
+}
+
+.feature-item:nth-child(1) {
+    background-image: url("img/nerds-index-slide1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 18px;
+}
+
+.feature-item:nth-child(2) {
+    background-image: url("img/nerds-index-slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.feature-item:nth-child(3) {
+    background-image: url("img/nerds-index-slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+
+#product-1:checked ~ .features-list .feature-item:nth-child(1) {
+    display: block;
+}
+  
+#product-2:checked ~ .features-list .feature-item:nth-child(2) {
+    display: block;
+}
+  
+#product-3:checked ~ .features-list .feature-item:nth-child(3) {
+    display: block;
+}
+  
+#product-1:checked ~ .feature-controls .feature-controls-item--1::before,
+#product-2:checked ~ .feature-controls .feature-controls-item--2::before,
+#product-3:checked ~ .feature-controls .feature-controls-item--3::before {
+    content: "";
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+}
+  
 .services {
     margin-bottom: 120px;
 }
@@ -217,6 +341,7 @@ ul {
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
+    text-transform: uppercase;
     
     background-color: #fb565a;
     border-radius: 2px;
@@ -387,22 +512,44 @@ ul {
     font-weight: 400;
 }
 
+.modal-writetous {
+    position: fixed;
+    width: 960px;
+    background-position: 0 0;
+    background-color: #ffffff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+    bottom: 120px;
+    left: calc(50% - 520px);
+}
+
 .modal-writetous h2 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 .writetous-form {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+.writetous-form p:nth-child(2) {
+    margin-left: 30px;
 }
 
 .writetous-item input {
     width: 360px;
     height: 50px;
     border-color: #d7dcde;
+    color: #d3d3d3;
 }
 
 .writetous-text input {
@@ -412,8 +559,74 @@ ul {
 
 .writetous-item input:hover {
     border-color: #b4b9bb;
+    color: #a8a8a8;
 }
 
 .writetous-item input:focus {
     border-color: #ffffff;
+    color: #ffffff;
+}
+
+input:invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
+
+.modal-close {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    
+    width: 22px;
+    height: 22px;
+  
+    font-size: 0;
+  
+    background-color: transparent;
+    border: 0;
+    opacity: 30%;
+  
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: -5px;
+
+  width: 30px;
+  height: 3px;
+
+  background-color: #fecccd;
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+    background-color: #fb565a;
+}
+
+.modal-close:focus::before,
+.modal-close:focus::after {
+    background-color: #ffeeee;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.writetous-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-button {
+    margin-left: 100px;
+    margin-bottom: 80px;
 }
