@@ -519,7 +519,7 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
     bottom: 120px;
-    left: calc(50% - 520px);
+    left: calc(50% - 480px);
     z-index: 10;
 }
 
@@ -546,20 +546,21 @@ input[type="radio"].visually-hidden {
 }
 
 .writetous-item input {
-    width: 350px;
+    width: 340px;
     height: 50px;
+    margin-top: 10px;
     padding-left: 10px;
-    border-color: #d7dcde;
+    padding-right: 10px;
     color: #d3d3d3;
     border-radius: 4px;
-    border-width: 3px;
+    border: 3px solid  #d7dcde;
 }
 
 .writetous-text textarea {
-    width: 750px;
+    width: 740px;
     height: 118px;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
     border-color: #d7dcde;
     color: #d3d3d3;
     border-radius: 4px;
@@ -574,6 +575,7 @@ input[type="radio"].visually-hidden {
 .writetous-item input:focus {
     border-color: #ffffff;
     border-radius: 4px;
+    color: #444444;
 }
 
 .writetous-item textarea:hover {
@@ -584,6 +586,7 @@ input[type="radio"].visually-hidden {
 .writetous-item textarea:focus {
     border-color: #ffffff;
     border-radius: 4px;
+    color: #444444;
 }
 
 .modal-close {
