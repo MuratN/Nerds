@@ -288,6 +288,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
+    position: relative;
     display: flex;
     width: 100%;
     background-size: cover;
@@ -297,7 +298,24 @@ input[type="radio"].visually-hidden {
     min-height: 420px;
 }
 
+.map iframe {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background-size: cover;
+  
+    border: none;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+}
+
 .contacts {
+    position: absolute;
+    right: calc(50% + 260px);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,8 +328,11 @@ input[type="radio"].visually-hidden {
 }
 
 .map-marker {
-    margin-top: 90px;
-    margin-left: 361px;
+    position: absolute;
+    left: calc(50% + 100px);
+    top: 45px;
+    /* margin-top: 90px;
+    margin-left: 361px; */
 }
 
 .social-list {
@@ -511,6 +532,41 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
 }
 
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.modal {
+    display: none;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
 .modal-writetous {
     position: fixed;
     width: 960px;
@@ -556,7 +612,7 @@ input[type="radio"].visually-hidden {
     border: 3px solid  #d7dcde;
 }
 
-.writetous-text textarea {
+.writetous-text {
     width: 740px;
     height: 118px;
     margin-top: 10px;
@@ -649,4 +705,13 @@ input[type="radio"].visually-hidden {
     width: 260px;
     overflow: hidden;
     border-color: transparent;
+}
+
+.modal-show {
+    display: block;
+    animation: show 1s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
