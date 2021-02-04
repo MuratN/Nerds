@@ -612,7 +612,7 @@ input[type="radio"].visually-hidden {
     border: 3px solid  #d7dcde;
 }
 
-.writetous-text textarea {
+.writetous-text {
     width: 740px;
     height: 118px;
     margin-top: 10px;
